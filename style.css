@@ -1,0 +1,109 @@
+body {
+    font-family: 'Raleway', sans-serif; 
+    margin: 0;
+    background: linear-gradient(135deg, #f0f4c3, #e1bee7); 
+    color: #333;
+    line-height: 1.7;
+}
+
+h1 {
+    text-align: center;
+    color: #512da8; 
+    margin-bottom: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 14px 28px;
+    background: linear-gradient(to right, #7e57c2, #512da8); 
+    color: white;
+    border-radius: 8px;
+    margin: 0 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.todo-container, .completed-container, .about-container {
+    margin: 40px auto;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.95); 
+    padding: 40px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    border-radius: 12px;
+    backdrop-filter: blur(8px); 
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 14px;
+    border: 2px solid #ce93d8; 
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #7e57c2;
+    box-shadow: 0 4px 8px rgba(126, 87, 194, 0.3);
+}
+
+button {
+    padding: 14px 30px;
+    background: linear-gradient(to right, #4caf50, #2e7d32); 
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+li {
+    padding: 18px;
+    border-bottom: 1px solid #d1c4e9; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17px;
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #ede7f6; 
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+.completed-task {
+    text-decoration: line-through;
+    color: #673ab7; 
+}
